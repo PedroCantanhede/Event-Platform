@@ -1,15 +1,7 @@
 import { useState, FormEvent } from "react";
 import { Logo } from "../components/Logo";
-import { gql, useMutation } from '@apollo/client';
 import { useNavigate } from "react-router-dom";
-
-const CREATE_SUBSCRIBER_MUTATION = gql`
-    mutation CreateSubscriber($name: String!, $email: String!) {
-        createSubscriber(data: {name: $name, email: $email}) {
-            id
-        }
-    }
-`
+import { useCreateSubscriberMutation } from '../graphql/generated';
 
 export function Subscribe() {
     const navigate = useNavigate()
@@ -17,7 +9,7 @@ export function Subscribe() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
 
-    const [createSubscriber, { loading }] = useMutation(CREATE_SUBSCRIBER_MUTATION)
+    const [createSubscriber, { loading }] = useCreateSubscriberMutation()
 
     async function handleSubscribe(event: FormEvent) {
         event.preventDefault();
@@ -46,19 +38,23 @@ export function Subscribe() {
                     </p>
                 </div>
 
-                <div className="p-8 bg-gray-700 border border-gray-500 rounded">
+                <div className="py-8 px-6 bg-gray-700 border border-gray-500 rounded z-10">
                     <strong className="text-2xl mb-6 block">Inscreva-se gratuitamente</strong>
 
-                    <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
+                    <form 
+                        onSubmit={handleSubscribe} 
+                        className="flex flex-col gap-2 w-full">
                         <input 
                             className="bg-gray-900 rounded px-5 h-14"
                             type="text"
+                            required
                             placeholder="Seu nome completo"
                             onChange={event => setName(event.target.value)}
                         />
                         <input 
                             className="bg-gray-900 rounded px-5 h-14"
                             type="email"
+                            required
                             placeholder="Digite seu e-mail"
                             onChange={event => setEmail(event.target.value)}
                         />
@@ -75,6 +71,7 @@ export function Subscribe() {
             </div>
             
             <img src="/src/assets/code-mockup.png" className="mt-10" alt="" />
+            <img src="/src/assets/react.svg" alt='' className='absolute top-1' />
         </div>
     )
 }
