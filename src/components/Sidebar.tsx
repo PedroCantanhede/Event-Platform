@@ -1,11 +1,21 @@
 import { Lesson } from "./Lesson";
 import { useGetLessonsQuery } from '../graphql/generated';
+import React from "react";
+import classNames from "classnames";
 
-export function Sidebar() {
-    const { data } = useGetLessonsQuery()
+interface SidebarProps {
+    mobileMenu: boolean
+}
+
+export const Sidebar: React.FC<SidebarProps> = (props) => {
+
+    const { data } = useGetLessonsQuery();
 
     return (
-        <aside className="w-[348px] bg-gray-700 p-6 border-l border-gray-600">
+        <aside className={classNames("w-[348px] bg-gray-700 p-6 border-l border-gray-600 md:w-full",
+        {
+            'md:hidden': props.mobileMenu
+        })}>
             <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
                 Cronograma de aulas
             </span>
@@ -14,7 +24,7 @@ export function Sidebar() {
                 {data?.lessons.map(lesson => {
                     return (
                         <Lesson
-                        key={lesson.id}
+                            key={lesson.id}
                             title={lesson.title}
                             slug={lesson.slug}
                             availableAt={new Date(lesson.availableAt)}
