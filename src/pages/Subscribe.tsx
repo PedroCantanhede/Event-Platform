@@ -34,7 +34,7 @@ export const Subscribe: React.FC = () => {
                     <Logo />
 
                     <h1 className="mt-8 text-[2.5rem] leading-tight md:max-w-[370px]">
-                        Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
+                        Construa uma <strong className="text-violet-400">aplicação completa</strong>, do zero, com <strong className="text-violet-400">React</strong>
                     </h1>
                     <p className="mt-4 text-gray-200 leading-relaxed md:max-w-[370px]">
                         Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
@@ -50,8 +50,8 @@ export const Subscribe: React.FC = () => {
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M36.3529 25.5253C37.7198 24.1559 39.9359 24.1582 41.3027 25.5249L44.4733 28.6955C44.4736 28.6958 44.4739 28.6961 44.4742 28.6964C45.8437 30.0634 45.8414 32.2795 44.4747 33.6462L35.6467 42.4742C34.9893 43.1316 34.0997 43.4996 33.172 43.4996H28C27.1716 43.4996 26.5 42.828 26.5 41.9996V36.8276C26.5 35.8998 26.868 35.0103 27.5253 34.3529L36.352 25.5263C36.3523 25.526 36.3526 25.5256 36.3529 25.5253ZM39.1813 27.6462C38.9844 27.4492 38.6692 27.4512 38.476 27.6449L29.6467 36.4742C29.552 36.5688 29.5 36.6953 29.5 36.8276V40.4996H33.172C33.3043 40.4996 33.4307 40.4475 33.5253 40.3529L42.3533 31.5249C42.5503 31.3279 42.5483 31.0127 42.3547 30.8196L39.1813 27.6462Z" fill="white"></path>
                                 <defs>
                                 <linearGradient id="paint0_linear_81_14" x1="9.13421" y1="7.9081" x2="33.6662" y2="27.7424" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#81D8F7"></stop>
-                                <stop offset="1" stop-color="#00B37E" stop-opacity="0.2"></stop>
+                                <stop stop-color="#ac8afc"></stop>
+                                <stop offset="1" stop-color="#996dff" stop-opacity="0.2"></stop>
                                 </linearGradient>
                                 </defs>
                             </svg>
@@ -69,8 +69,8 @@ export const Subscribe: React.FC = () => {
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M37.9998 2.50075C38.8279 2.50075 39.4992 3.17204 39.4992 4.00012C39.4992 6.48575 41.5142 8.50075 43.9998 8.50075C44.8279 8.50075 45.4992 9.17204 45.4992 10.0001C45.4992 10.8282 44.8279 11.4995 43.9998 11.4995C41.5142 11.4995 39.4992 13.5145 39.4992 16.0001C39.4992 16.8282 38.8279 17.4995 37.9998 17.4995C37.1718 17.4995 36.5005 16.8282 36.5005 16.0001C36.5005 13.5145 34.4855 11.4995 31.9998 11.4995C31.1718 11.4995 30.5005 10.8282 30.5005 10.0001C30.5005 9.17204 31.1718 8.50075 31.9998 8.50075C34.4855 8.50075 36.5005 6.48575 36.5005 4.00012C36.5005 3.17204 37.1718 2.50075 37.9998 2.50075ZM37.9998 8.49981C37.5731 9.0679 37.0676 9.57341 36.4995 10.0001C37.0676 10.4268 37.5731 10.9323 37.9998 11.5004C38.4265 10.9323 38.9321 10.4268 39.5001 10.0001C38.9321 9.57341 38.4265 9.0679 37.9998 8.49981Z" fill="white"></path>
                                 <defs>
                                 <linearGradient id="paint0_linear_78_7" x1="12.2608" y1="39.2609" x2="38.2174" y2="11.087" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#81D8F7"></stop>
-                                <stop offset="1" stop-color="#00B37E" stop-opacity="0.2"></stop>
+                                <stop stop-color="#ac8afc"></stop>
+                                <stop offset="1" stop-color="#996dff" stop-opacity="0.2"></stop>
                                 </linearGradient>
                                 </defs>
                             </svg>
@@ -85,7 +85,7 @@ export const Subscribe: React.FC = () => {
                         <div>
                             <div className="flex items-center gap-4 mt-4 md:justify-center md:w-full">
                                 <img 
-                                    className="h-16 w-16 rounded-full border-2 border-blue-500"
+                                    className="h-16 w-16 rounded-full border-2 border-violet-400"
                                     src="https://avatars.githubusercontent.com/u/52787750?v=4"
                                     alt="Foto do professor Pedro Cantanhêde sorrindo e segurando seus óculos escuros"
                                 />
@@ -124,7 +124,7 @@ export const Subscribe: React.FC = () => {
                         <button 
                             type="submit"
                             disabled={loading}
-                            className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
+                            className="mt-4 bg-violet-500 uppercase py-4 rounded font-bold text-sm hover:bg-violet-600 transition-colors disabled:opacity-50"
                         >
                             Garantir minha vaga
                         </button>
