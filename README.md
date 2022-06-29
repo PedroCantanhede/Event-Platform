@@ -5,14 +5,14 @@
 <div align="center">
     <h3> 🟣 Construa uma aplicação completa, do zero, com React. 🟣 </h3>
     <a href="https://rocketseat.com.br/" target="_blank">
-      <img src="https://img.shields.io/static/v1?label=Rocketseat&message=Ignite&color=996dff2&style=for-the-badge" target="_blank" alt="Rocketseat">
+      <img src="https://img.shields.io/static/v1?label=Rocketseat&message=Ignite&color=996dff&style=for-the-badge" target="_blank" alt="Rocketseat">
     </a>
     <a href="https://github.com/PedroCantanhede" target="_blank">
-      <img src="https://img.shields.io/static/v1?label=Author&message=PedroCantanhede&color=996dff2&style=for-the-badge" target="_blank" alt="Pedro Cantanhêde">
+      <img src="https://img.shields.io/static/v1?label=Author&message=PedroCantanhede&color=996dff&style=for-the-badge" target="_blank" alt="Pedro Cantanhêde">
     </a>
-    <img src="https://img.shields.io/github/repo-size/PedroCantanhede/Event-Platform?color=996dff2&style=for-the-badge" alt="Repositório"> 
-    <img src="https://img.shields.io/github/license/PedroCantanhede/Event-Platform?color=996dff2&style=for-the-badge" alt="Licença">
-    <img src="https://img.shields.io/github/languages/count/PedroCantanhede/Event-Platform?color=996dff2&style=for-the-badge" alt="Linguagens">
+    <img src="https://img.shields.io/github/repo-size/PedroCantanhede/Event-Platform?color=996dff&style=for-the-badge" alt="Repositório"> 
+    <img src="https://img.shields.io/github/license/PedroCantanhede/Event-Platform?color=996dff&style=for-the-badge" alt="Licença">
+    <img src="https://img.shields.io/github/languages/count/PedroCantanhede/Event-Platform?color=996dff&style=for-the-badge" alt="Linguagens">
 </div>
 
 # Ignite Lab
